@@ -1,1 +1,1 @@
-# Mini-project
+# Event Management System by Using JSF Framework
