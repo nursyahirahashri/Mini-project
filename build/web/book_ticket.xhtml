@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Book Ticket</title>
+        
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+            
+       <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"> </script>
+    
+    </h:head>
+    <h:body styleClass="cyan lighten-5">
+        <div class="valign-wrapper" id="login-page">
+            <div class="container">
+                <div class="center-align">
+                    <div class="row">
+                        <div class="col s6 offset-s3">
+                            <div class="card">
+                                <div class="card-content">
+                                    <h2>Event Detail</h2>
+                                    
+                                    <div class="left-align" > 
+                                        <h:form id="login-form">
+                                            <p:growl autoUpdate="true"/>
+                                            <div class="row">
+                                                
+                                                <div class="col s12 input-field">
+                                                    <h:outputText value="Event ID: " />
+                                                    <h:outputText value="E001" />
+                                            </div>
+                                                <div class="col s12 input-field">
+                                                    <h:outputText value="Event Name: " />
+                                                    <h:outputText value="PC Competition" />
+                                            </div>
+                                                <div class="col s12 input-field">
+                                                    <h:outputText value="Date: " />
+                                                    <h:outputText value="20 May 2020" />
+                                            </div>
+                                                <div class="col s12 input-field">
+                                                     <h:outputText value="Time: " />
+                                                    <h:outputText value="10.00a.m." />
+                                            </div>
+                                                <div class="col s12 input-field">
+                                                     <h:outputText value="Venue: " />
+                                                     <h:outputText value="FSKTM Lab" />
+                                            </div>
+                                                <div class="col s12 input-field">
+                                                     <h:outputText value="Fee: " />
+                                                     <h:outputText value="RM45" />
+                                            </div>
+                                                <div class="col s12 input-field">
+                                                     <h:outputText value="Description: " />
+                                                    <h:outputText value="Programming" />
+                                            </div>
+                                                
+                                          </div>
+                                        </h:form>
+                                        <br></br><p:button value="Book Ticket" /> <p:button value="Back" outcome="user_homepage" />
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </h:body>
+</html>
+

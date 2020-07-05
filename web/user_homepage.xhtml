@@ -1,0 +1,57 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui">
+
+    <f:view contentType="text/html">
+        <h:head>
+            <f:facet name="first">
+                <meta content='text/html; charset=UTF-8' http-equiv="Content-Type"/>
+                <title>User's Homepage</title>
+            </f:facet>
+            
+            
+             <style type="text/css">       
+                .centered {
+                text-align: center;
+            }
+            </style>
+            
+        </h:head>
+
+        <h:body styleClass="cyan lighten-5">
+
+            <p:layout fullPage="true">
+                
+                <p:layoutUnit position="north" size="300" resizable="true" closable="true" collapsible="true">
+                    
+                    <p:graphicImage value="images/main.jpg" width="100%"/>
+                    
+                </p:layoutUnit>
+
+                <p:layoutUnit position="west" size="175" header="Menu" collapsible="true">
+                    <p:menu>
+                        <p:submenu label="Features">
+                            <p:menuitem value="Profile" url="update_profile.xhtml" />
+                            <p:menuitem value="Join Event" url="join_event.xhtml" />
+                            <p:menuitem value="Check Ticket" url="check_ticket.xhtml" />
+                            <p:menuitem value="Log Out" url="index.xhtml" />
+
+                        </p:submenu>
+
+                    </p:menu>
+                </p:layoutUnit>
+
+                <p:layoutUnit position="center" styleClass="centered">
+                    <p:graphicImage value="images/UpcomingEvent.jpg" width="40%"/>
+                </p:layoutUnit>
+
+            </p:layout>
+
+        </h:body>
+
+    </f:view>
+</html>
+
